@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import argparse
 import random
 import numpy as np
+
 #图像绘制
 def draw_display(history):
     history_dict = history.history
@@ -24,6 +25,7 @@ def draw_display(history):
     plt.ylabel('Loss')
     plt.legend()
     plt.show()
+
 
     plt.clf()
     acc = history_dict['accuracy']
